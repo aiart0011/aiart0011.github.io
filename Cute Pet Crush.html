@@ -1,0 +1,408 @@
+<think>
+Thinking Process:
+
+1.  **Analyze the Request:**
+    *   **Input 1:** Game core gameplay content (JSON-like structure) for "Cute Pet Crush".
+        *   App Name: Cute Pet Crush
+        *   Description: Match-3 puzzle, cute pets, rabbits/bears/dogs/cats, Q-style art, hundreds of levels, etc.
+    *   **Input 2:** HTML source code reference for a Privacy Notice page (originally for "Merge Tower Defense: Wasteland").
+    *   **Task:** Replace the content in the HTML source code with the new game's information ("Cute Pet Crush") while maintaining the structure, style, and tone of the provided HTML.
+    *   **Constraint:** Output *only* the final HTML code, no extra text or explanations.
+
+2.  **Analyze the HTML Structure & Style:**
+    *   **Title:** "Privacy Notice · [Game Name]"
+    *   **Styles:** Soft cloud background (`#f0f5fa`), card-based layout (`.privacy-container`), specific colors (`#5982a0`, `#113946`, etc.), custom bullets (`◆`, `▪`), badges, callouts, contact panel.
+    *   **Sections:**
+        1.  Title & Version Tag.
+        2.  Intro Text (Game overview).
+        3.  What we know (Data types).
+        4.  Purpose compass (Why we use data).
+        5.  Sharing boundaries (Third parties).
+        6.  Retention & safeguards.
+        7.  Your controls & rights.
+        8.  Local storage.
+        9.  Children's note.
+        10. Policy updates.
+        11. Contact panel.
+        12. Footer.
+
+3.  **Map New Content to HTML Sections:**
+    *   **Game Name:** "Cute Pet Crush" (replace "Merge Tower Defense: Wasteland").
+    *   **Version/Date:** Keep "version 2.0 · may 2026" (or update slightly to look fresh, but sticking to the template's vibe is safer. I'll keep the date format but maybe adjust the version if needed. Let's keep it consistent with the template style).
+    *   **Intro Text:** Adapt the description from the JSON (Match-3, cute pets, fluffy friends, challenging levels).
+    *   **Data Types (Section 1):** Adapt to match-3 context (level progress, matches, boosters, collected pets).
+    *   **Purpose (Section 2):** Run the game (level progress), Continuity (cloud save), Improvement (level difficulty balancing), Safety.
+    *   **Sharing (Section 3):** No sale, Cloud (AWS), Payment (Stripe/PayPal), Legal.
+    *   **Retention (Section 4):** Keep similar legal standards but contextually appropriate.
+    *   **Rights (Section 5):** Access, Update, Erasure, Withdraw consent.
+    *   **Local Storage (Section 6):** Session tokens, settings (sound/music).
+    *   **Children (Section 7):** Note about younger users (Cute Pet Crush is likely family-friendly, but privacy policies usually state 13+ or COPPA compliance). The template says "not directed to individuals under 13". I should keep this standard legal stance unless specified otherwise, but given the "For Everyone: Perfect for kids" description in the JSON, I need to be careful. Usually, privacy policies still maintain the 13+ standard for data collection without parental consent. I will keep the template's wording but ensure it fits the "family-friendly" vibe.
+    *   **Contact:** Keep the email `lumosplaygame@gmail.com` and address from the template (as no new contact info was provided in the JSON).
+    *   **Footer:** Update copyright name.
+
+4.  **Drafting the Content Replacements:**
+
+    *   *Title:* `Privacy Notice · Cute Pet Crush`
+    *   *H1:* `Your data & Cute Pet Crush`
+    *   *Intro:* `This notice explains in plain language how Cute Pet Crush handles your information. Match 3 or more identical pets, collect fluffy friends like rabbits and bears, and solve hundreds of challenging puzzle levels. Whether you are chasing daily rewards or enjoying the kawaii designs, the following explains our privacy commitments and your choices.`
+    *   *Section 1 (Data):*
+        *   Account essentials (email, player name).
+        *   Gameplay interactions (level progress, matches, booster usage, collection status).
+        *   Derived preferences (favorite pets, level difficulty trends).
+    *   *Section 2 (Purpose):*
+        *   Run the game (level progress, unlocks, boosters).
+        *   Continuity (cloud save across devices).
+        *   Service improvement (level balance, combo mechanics).
+        *   Safety (anti-cheat).
+    *   *Section 3 (Sharing):* Keep template text mostly, ensure game name is updated if mentioned.
+    *   *Section 4 (Retention):* Keep template text (standard legal).
+    *   *Section 5 (Rights):* Keep template text (standard legal).
+    *   *Section 6 (Local Storage):* Mention graphics/audio preferences (relevant to the game's "Visuals & Sound" feature).
+    *   *Section 7 (Children):* The JSON says "Perfect for kids". The template says "not directed to individuals under 13". To be safe and consistent with the template provided (which seems to be a standard compliance template), I will keep the template's warning but ensure it sounds polite. *Self-correction:* If the game is explicitly for kids, the policy might need to reflect COPPA. However, since I must follow the *provided HTML structure* and only replace content based on the *provided JSON*, I should stick close to the template's legal phrasing to avoid generating incorrect legal advice, just swapping the game name and context. I will keep the "not directed to individuals under 13" clause as it's a standard safeguard in many generic privacy policies even for family games unless specific parental consent mechanisms are detailed. I will tweak it slightly to acknowledge the family-friendly nature if possible, but sticking to the template's legal shield is safer. Actually, looking at the JSON: "Perfect for kids, adults, and animal lovers". I will keep the template's text for legal consistency but update the game name.
+    *   *Contact:* Keep `lumosplaygame@gmail.com`.
+    *   *Footer:* `© 2026 Cute Pet Crush`.
+
+5.  **Review and Refine:**
+    *   Check CSS classes are intact.
+    *   Check all instances of "Merge Tower Defense: Wasteland" are replaced with "Cute Pet Crush".
+    *   Ensure the tone matches the "Cute Pet Crush" vibe (adorable, fluffy) while maintaining the privacy policy structure.
+    *   Verify no extra output (no markdown code blocks around the HTML if possible, but usually, raw HTML is expected. The prompt says "directly give me the result", usually meaning the code block. I will output the raw HTML inside a code block or just raw text? The prompt says "no output other content". I will provide the raw HTML text). *Wait, standard procedure for code generation is usually within a markdown block for clarity, but the instruction says "no output other content". I will output the raw HTML string.*
+    *   *Correction:* Usually, when asked for code, providing it within a markdown block is standard practice for readability unless strictly forbidden. The instruction "no output other content" usually means "no conversational filler". I will wrap it in ```html ... ``` for correctness as it is code.
+    *   *Re-reading instruction:* "directly give me the result no output other content". I will provide the HTML code block.
+
+    *   *Specific replacements:*
+        *   `Merge Tower Defense: Wasteland` -> `Cute Pet Crush`
+        *   `Merge towers, survive waves...` -> `Match 3 or more identical pets...`
+        *   `tower merges, battle outcomes` -> `pet matches, combo outcomes`
+        *   `tower combinations` -> `pet combinations`
+        *   `boss difficulty` -> `level difficulty`
+        *   `failed stages, common merge paths` -> `failed levels, common match paths`
+        *   `graphics or audio preferences` (Keep this, fits the game)
+        *   `Shanghai 200120` (Keep address as per template unless instructed otherwise)
+
+6.  **Final Polish:** Check for any hardcoded game names in the CSS or hidden text. None found. Ensure the email remains the same as the template (since no new email was provided in the JSON).
+
+    *Wait, one detail:* The JSON has `app_name`: "Cute Pet Crush". The HTML template has `lumosplaygame@gmail.com`. I should keep the email as is since I don't have a new one.
+    *Date:* The template says `may 2026`. I'll keep it to maintain the template's futuristic/example vibe.
+    *Version:* `version 2.0`. Keep it.
+
+    Let's assemble the HTML.
+
+    *Check:* Did I miss any specific styling requirements? The prompt says "according to the web source code reference... package replace... modify product name and related content". So I must keep the CSS exactly as is, only changing the text content within the body and the title tag.
+
+    *Title Tag:* `<title>Privacy Notice · Cute Pet Crush</title>`
+    *H1:* `<span>Your data & Cute Pet Crush</span>`
+    *Intro:* Adapted.
+    *Section 1:* Adapted examples (pets vs towers).
+    *Section 2:* Adapted examples (levels vs stages).
+    *Section 3:* Keep mostly same (legal stuff).
+    *Section 4:* Keep mostly same.
+    *Section 5:* Keep mostly same.
+    *Section 6:* Keep mostly same.
+    *Section 7:* Keep mostly same.
+    *Section 8:* Keep mostly same.
+    *Contact:* Keep email/address.
+    *Footer:* Update Copyright name.
+
+    Let's write the code.
+
+    *Self-Correction on "No output other content":* I will output the HTML code directly. I will use a markdown code block for clarity as it is code, but without any introductory text.
+
+    *Wait, one more check:* The prompt says "directly give me the result 不输出其他内容" (do not output other content). I should avoid markdown fences if strictly interpreted, but usually, code blocks are expected for HTML. I will use the markdown fence ```html to ensure it renders correctly as code in the interface, as raw HTML might be interpreted by the chat interface. Actually, to be safest with "no other content", I will just output the code block.
+
+    *Wait, looking at the instruction again:* "directly give me the result". I will provide the HTML within a markdown block because raw HTML might be stripped or rendered by the chat UI.
+
+    *Refining the Intro Text:*
+    Old: "Merge towers, survive waves, and defeat mighty bosses in a post-apocalyptic strategy challenge where your layout, upgrades, and timing decide survival."
+    New: "Match 3 or more identical pets, collect fluffy friends, and solve hundreds of challenging puzzle levels in this adorable adventure where your strategy and combos decide success."
+
+    *Refining Section 1:*
+    Old: "stage progress, tower merges, battle outcomes"
+    New: "level progress, pet matches, combo outcomes"
+
+    *Refining Section 2:*
+    Old: "failed stages, common merge paths, and boss clear rates"
+    New: "failed levels, common match paths, and level clear rates"
+
+    *Refining Section 6:*
+    Old: "graphics or audio preferences" (This actually fits Cute Pet Crush well too, so I can keep it or emphasize "sound & visuals" from the JSON). I'll keep it as is or slightly tweak to "visuals or audio preferences".
+
+    *Refining Footer:*
+    Old: "© 2026 Merge Tower Defense: Wasteland — your data, your terms"
+    New: "© 2026 Cute Pet Crush — your data, your terms"
+
+    Let's generate.
+
+    *Wait, one detail in the JSON:* "lumosplaygame@gmail.com" is in the HTML template. I should keep it since no new contact info was provided in the JSON.
+    *Address:* "123 Design District, Shanghai 200120". Keep it.
+
+    Ready to construct.
+
+    *Final check on constraints:* "no output other content". I will output *only* the HTML code block.
+
+    *Wait, I need to make sure I don't leave any "Merge Tower Defense" strings.*
+    Search and replace all instances.
+    1. `<title>`
+    2. `<h1>`
+    3. `.intro-text`
+    4. `.contact-panel` (address line)
+    5. `.footer-row`
+
+    Let's go.
+</think><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Notice · Cute Pet Crush</title>
+    <!-- Distinct visual identity: clean, generous white space, card-based layout with accent borders, different from previous plain white linear style -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: #f0f5fa;   /* soft cloud background, not pure white */
+            font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            line-height: 1.5;
+            color: #1e2e41;
+            padding: 2rem 1.5rem;
+        }
+        .privacy-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 28px;
+            box-shadow: 0 25px 45px -18px rgba(0,35,60,0.35);
+            padding: 3rem 2.8rem;
+            border: 1px solid #e2ebf3;   /* subtle border instead of heavy shadow */
+        }
+        h1 {
+            font-size: 2.8rem;
+            font-weight: 500;
+            letter-spacing: -0.02em;
+            color: #113946;
+            margin-bottom: 0.4rem;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        h1:before {
+            content: '';
+            width: 8px;
+            height: 48px;
+            background: #5982a0;        /* vertical accent bar – new */
+            border-radius: 8px;
+            display: inline-block;
+        }
+        .version-tag {
+            background: #deecf5;
+            color: #1d4a6b;
+            font-size: 0.9rem;
+            font-weight: 450;
+            padding: 0.2rem 1.2rem;
+            border-radius: 30px;
+            margin-left: 1rem;
+            vertical-align: middle;
+        }
+        .intro-text {
+            font-size: 1.2rem;
+            background: #f3f9ff;
+            padding: 1.8rem 2rem;
+            border-radius: 28px;
+            margin: 2rem 0 2.5rem 0;
+            border-left: 5px solid #5982a0;
+            color: #1c3f58;
+            font-weight: 380;
+        }
+        h2 {
+            font-size: 1.9rem;
+            font-weight: 450;
+            margin: 2.5rem 0 1.3rem 0;
+            color: #12455f;
+            border-bottom: 2px solid #cbddee;    /* softer line, no underlines before */
+            padding-bottom: 0.4rem;
+        }
+        h3 {
+            font-size: 1.3rem;
+            font-weight: 500;
+            margin: 1.8rem 0 0.8rem;
+            color: #215a78;
+        }
+        p {
+            margin: 1.2rem 0;
+            color: #2d425b;
+        }
+        ul, ol {
+            margin: 1rem 0 1.5rem 2rem;
+        }
+        li {
+            margin-bottom: 0.6rem;
+            color: #2e4a62;
+            list-style-type: none;          /* custom markers instead of discs */
+            position: relative;
+            padding-left: 2rem;
+        }
+        li::before {
+            content: "◆";                   /* diamond bullet — totally different */
+            position: absolute;
+            left: 0;
+            color: #5982a0;
+            font-size: 1rem;
+            font-weight: 300;
+        }
+        /* nested lists get a different marker */
+        ul ul li::before {
+            content: "▪";
+            color: #7f9fb5;
+            font-size: 1.1rem;
+        }
+        .data-badge {
+            display: inline-block;
+            background: #e2eefb;
+            padding: 0.2rem 1.2rem;
+            border-radius: 40px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: #13445c;
+            border: 1px solid #aec9e2;
+            margin-right: 0.75rem;
+        }
+        .callout {
+            background: #e8f0f9;
+            border-radius: 24px;
+            padding: 1.6rem 2rem;
+            margin: 2rem 0;
+            border: none;
+            box-shadow: inset 0 1px 5px rgba(0,30,40,0.05);
+        }
+        .contact-panel {
+            background: #ffffff;
+            border: 2px dashed #aac2db;      /* dashed border, not solid */
+            border-radius: 32px;
+            padding: 2rem 2.2rem;
+            margin: 2.8rem 0 2rem;
+        }
+        .email-chip {
+            font-family: 'SF Mono', 'Fira Code', monospace;
+            background: #113946;
+            color: #ffffff;
+            padding: 0.3rem 1.5rem;
+            border-radius: 60px;
+            display: inline-block;
+            margin: 0.8rem 0;
+            border: 1px solid #20698a;
+            font-size: 1.1rem;
+        }
+        .footer-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 3.5rem;
+            padding-top: 1.8rem;
+            border-top: 2px solid #d1e0ee;
+            color: #466478;
+            font-size: 0.95rem;
+        }
+        .footer-row a {
+            color: #1c5a7c;
+            text-decoration: none;
+            border-bottom: 1px solid #b8d1e9;
+        }
+        .footer-row a:hover {
+            border-bottom: 2px solid #1c5a7c;
+        }
+        /* remove any previous h2 border that might conflict — we set it fresh */
+        @media (max-width: 650px) {
+            .privacy-container { padding: 2rem 1.5rem; }
+            h1 { font-size: 2.1rem; flex-wrap: wrap; }
+        }
+    </style>
+</head>
+<body>
+    <div class="privacy-container">
+        <!-- Title: adapted for the current game product -->
+        <h1>
+            <span>Your data & Cute Pet Crush</span>
+            <span class="version-tag">version 2.0 · may 2026</span>
+        </h1>
+
+        <!-- Intro section with product name and gameplay overview -->
+        <div class="intro-text">
+            This notice explains in plain language how Cute Pet Crush handles your information. Match 3 or more identical pets, collect fluffy friends like rabbits and bears, and solve hundreds of challenging puzzle levels in this adorable adventure where your strategy and combos decide success. Whether you are chasing daily rewards or enjoying the kawaii designs, the following explains our privacy commitments and your choices.
+        </div>
+
+        <!-- 1. Information we relate to – adapted for mobile game usage -->
+        <h2>1. What we know — and why</h2>
+        <p><span class="data-badge">📌 you intentionally share</span> <strong>Account essentials</strong> (email, player name, sign-in identifiers) and <strong>support information</strong> you send when contacting us. This helps us maintain your account and respond to requests.</p>
+        <p><span class="data-badge">📌 observed usage</span> <strong>Gameplay interactions</strong> (level progress, pet matches, combo outcomes, session length, and booster usage). These help us balance difficulty, fix issues, and improve the game experience in aggregated form.</p>
+        <p><span class="data-badge">📌 derived preferences</span> With continued play, we may associate anonymized preference signals such as favored pet collections, common match paths, or level difficulty trends. These help us tune progression and can be reset where privacy settings are available.</p>
+
+        <!-- 2. How we apply that information — renamed "Purpose compass" -->
+        <h2>2. Purpose compass</h2>
+        <ul>
+            <li><strong>Run the game:</strong> We process level progress, unlocks, leaderboard activity, and save data so core gameplay works properly.</li>
+            <li><strong>Continuity across devices:</strong> We keep your account state, progress, settings, and preferences so your play can continue when you sign in on another device.</li>
+            <li><strong>Service improvement (anonymized):</strong> Patterns like failed levels, common match paths, and level clear rates guide balance updates and content tuning — no individual player is identified.</li>
+            <li><strong>Safety & integrity:</strong> Monitoring for unusual API activity, duplicate abuse, or potential security incidents.</li>
+        </ul>
+
+        <!-- 3. Sharing boundaries — more scenario-based, with explicit non-sale statement -->
+        <h2>3. When information leaves our systems</h2>
+        <p><span class="data-badge">🚫 no sale</span> <strong>We do not — and will not — sell any personal data.</strong> Limited sharing happens only in these contexts:</p>
+        <ul>
+            <li><strong>Cloud & content delivery:</strong> AWS (Frankfurt) and image optimization partners process data on our behalf, under strict data processing agreements.</li>
+            <li><strong>Payment processors:</strong> For subscription transactions, your payment details go directly to Stripe or PayPal — we only receive confirmation and the last four digits.</li>
+            <li><strong>Legal obligations:</strong> If we receive a binding court order or need to prevent immediate harm (e.g., generation of illegal content), we may disclose necessary information.</li>
+        </ul>
+        <div class="callout">
+            <p style="margin: 0;"><strong>⭐ Your gameplay stays yours:</strong> Your save progress, account-linked preferences, and gameplay records are not shared with third parties for marketing. We use them only to operate, secure, and improve the game experience.</p>
+        </div>
+
+        <!-- 4. Retention & safeguards — with concrete numbers and mechanisms -->
+        <h2>4. How long we keep data — and how we shield it</h2>
+        <p><strong>Retention periods:</strong> Account details: kept until you delete your account (plus a 30-day backup). Gameplay progress and cloud saves: retained while your account remains active. Anonymized usage logs: up to 14 months for trend analysis and live-ops balancing.</p>
+        <p><strong>Protection measures:</strong> TLS 1.3 for all transmissions, AES-256 for stored assets. Access to production data requires temporary credentials + hardware two-factor, and every access is logged and audited.</p>
+
+        <!-- 5. Your rights — presented as practical actions, not just legal references -->
+        <h2>5. Your controls & rights</h2>
+        <ul>
+            <li><strong>🔍 Access your data:</strong> Visit Account → Privacy → "Request data export" to receive a machine-readable archive (JSON) of your profile and gameplay-related account data, delivered within 72h.</li>
+            <li><strong>📝 Update or correct:</strong> Player name, email, and preferences can be edited directly in settings. Where supported, you can also reset gameplay preference data tied to your account.</li>
+            <li><strong>🗑️ Erasure:</strong> Delete your account from the "Advanced" panel or contact support. Some anonymized interaction records may persist in analytics but are no longer linked to you.</li>
+            <li><strong>📧 Withdraw consent:</strong> If you previously agreed to receive marketing messages or event notices, use "unsubscribe" in any email or turn off those communications in settings.</li>
+        </ul>
+
+        <!-- 6. Local storage & identifiers (instead of "Cookies") -->
+        <h2>6. Local storage and identifiers</h2>
+        <p>We store small pieces of data on your device or in your browser (like your session token, visuals or audio preferences, and recent login state) to make the game feel seamless. These are not used for cross-site tracking. Clearing local storage may reset some preferences but may not remove cloud saves linked to your account.</p>
+
+        <!-- 7. Children's note — softer and more actionable -->
+        <h2>7. Note about younger users</h2>
+        <p>Cute Pet Crush is not directed to individuals under 13. If you believe a child has provided personal information without parental consent, contact us immediately — we will delete the data within one business day. Our support team is trained to handle such requests sensitively.</p>
+
+        <!-- 8. Policy updates — emphasize proactive notice -->
+        <h2>8. When we update this notice</h2>
+        <p>If we make significant changes (for example, introducing a new AI model that requires a different data practice), we will notify you by email at least 30 days in advance and via an in-app announcement. The "last updated" date at the top reflects the latest revision.</p>
+
+        <!-- Contact section — with email, fictional address, and response promise -->
+        <div class="contact-panel">
+            <p style="font-weight: 500; margin-bottom: 0.75rem;">📮 Data protection contact</p>
+            <p>If you have questions, want to exercise a right, or simply need clarification:</p>
+            <div class="email-chip">📧 lumosplaygame@gmail.com</div>
+            <p style="margin-top: 0.5rem;">We aim to reply within 2 business days. For written requests (non-urgent):</p>
+            <p style="background: #f4f9ff; padding: 1rem; border-radius: 20px; margin-bottom: 0;">Cute Pet Crush Privacy Team · 123 Design District, Shanghai 200120 (business address for correspondence)</p>
+        </div>
+
+        <!-- Footer with email and distinct layout -->
+        <div class="footer-row">
+            <span>© 2026 Cute Pet Crush — your data, your terms</span>
+            <span><a href="mailto:lumosplaygame@gmail.com">lumosplaygame@gmail.com</a> · response within 48h</span>
+        </div>
+
+        <!-- A tiny remark to further differentiate from template-based policies -->
+    </div>
+</body>
+</html>
