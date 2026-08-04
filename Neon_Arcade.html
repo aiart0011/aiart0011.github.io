@@ -1,0 +1,274 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy Policy · Neon Arcade - Neon Bullet Hell</title>
+    <!-- 纯英文网页，地址已更新为指定的英文地址，风格保持不变 -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: #f0f5fa;
+            font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            line-height: 1.5;
+            color: #1e2e41;
+            padding: 2rem 1.5rem;
+        }
+        .privacy-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 28px;
+            box-shadow: 0 25px 45px -18px rgba(0,35,60,0.35);
+            padding: 3rem 2.8rem;
+            border: 1px solid #e2ebf3;
+        }
+        h1 {
+            font-size: 2.8rem;
+            font-weight: 500;
+            letter-spacing: -0.02em;
+            color: #113946;
+            margin-bottom: 0.4rem;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        h1:before {
+            content: '';
+            width: 8px;
+            height: 48px;
+            background: #5982a0;
+            border-radius: 8px;
+            display: inline-block;
+        }
+        .version-tag {
+            background: #deecf5;
+            color: #1d4a6b;
+            font-size: 0.9rem;
+            font-weight: 450;
+            padding: 0.2rem 1.2rem;
+            border-radius: 30px;
+            margin-left: 1rem;
+            vertical-align: middle;
+        }
+        .intro-text {
+            font-size: 1.2rem;
+            background: #f3f9ff;
+            padding: 1.8rem 2rem;
+            border-radius: 28px;
+            margin: 2rem 0 2.5rem 0;
+            border-left: 5px solid #5982a0;
+            color: #1c3f58;
+            font-weight: 380;
+        }
+        h2 {
+            font-size: 1.9rem;
+            font-weight: 450;
+            margin: 2.5rem 0 1.3rem 0;
+            color: #12455f;
+            border-bottom: 2px solid #cbddee;
+            padding-bottom: 0.4rem;
+        }
+        h3 {
+            font-size: 1.3rem;
+            font-weight: 500;
+            margin: 1.8rem 0 0.8rem;
+            color: #215a78;
+        }
+        p {
+            margin: 1.2rem 0;
+            color: #2d425b;
+        }
+        ul, ol {
+            margin: 1rem 0 1.5rem 2rem;
+        }
+        li {
+            margin-bottom: 0.6rem;
+            color: #2e4a62;
+            list-style-type: none;
+            position: relative;
+            padding-left: 2rem;
+        }
+        li::before {
+            content: "◆";
+            position: absolute;
+            left: 0;
+            color: #5982a0;
+            font-size: 1rem;
+            font-weight: 300;
+        }
+        ul ul li::before {
+            content: "▪";
+            color: #7f9fb5;
+            font-size: 1.1rem;
+        }
+        .data-badge {
+            display: inline-block;
+            background: #e2eefb;
+            padding: 0.2rem 1.2rem;
+            border-radius: 40px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: #13445c;
+            border: 1px solid #aec9e2;
+            margin-right: 0.75rem;
+        }
+        .callout {
+            background: #e8f0f9;
+            border-radius: 24px;
+            padding: 1.6rem 2rem;
+            margin: 2rem 0;
+            border: none;
+            box-shadow: inset 0 1px 5px rgba(0,30,40,0.05);
+        }
+        .contact-panel {
+            background: #ffffff;
+            border: 2px dashed #aac2db;
+            border-radius: 32px;
+            padding: 2rem 2.2rem;
+            margin: 2.8rem 0 2rem;
+        }
+        .email-chip {
+            font-family: 'SF Mono', 'Fira Code', monospace;
+            background: #113946;
+            color: #ffffff;
+            padding: 0.3rem 1.5rem;
+            border-radius: 60px;
+            display: inline-block;
+            margin: 0.8rem 0;
+            border: 1px solid #20698a;
+            font-size: 1.1rem;
+        }
+        .footer-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 3.5rem;
+            padding-top: 1.8rem;
+            border-top: 2px solid #d1e0ee;
+            color: #466478;
+            font-size: 0.95rem;
+        }
+        .footer-row a {
+            color: #1c5a7c;
+            text-decoration: none;
+            border-bottom: 1px solid #b8d1e9;
+        }
+        .footer-row a:hover {
+            border-bottom: 2px solid #1c5a7c;
+        }
+        @media (max-width: 650px) {
+            .privacy-container { padding: 2rem 1.5rem; }
+            h1 { font-size: 2.1rem; flex-wrap: wrap; }
+        }
+        /* 地址块样式 - 保留英文，固定格式 */
+        .address-block {
+            background: #f4f9ff;
+            padding: 1rem 1.5rem;
+            border-radius: 20px;
+            margin-top: 0.5rem;
+            border-left: 4px solid #5982a0;
+            font-style: normal;
+            display: inline-block;
+            white-space: pre-line;
+            word-break: break-word;
+        }
+        .address-block strong {
+            display: block;
+            margin-bottom: 0.2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="privacy-container">
+        <h1>
+            <span>Your Data & Neon Arcade - Neon Bullet Hell</span>
+            <span class="version-tag">version 1.0 · May 2026</span>
+        </h1>
+
+        <div class="intro-text">
+            This privacy policy explains in plain language how Neon Arcade - Neon Bullet Hell handles your information. Pilot neon aircraft, dodge dense bullet storms, and blast through waves of enemies in a high-speed arcade shooter where your reflexes, weapon upgrades, and survival instincts decide your fate. Whether you are just starting or pushing through harder waves, the following explains our privacy commitments and your choices.
+        </div>
+
+        <!-- 1. Information we collect -->
+        <h2>1. What we know — and why</h2>
+        <p><span class="data-badge">📌 you intentionally share</span> <strong>Account essentials</strong> (email, player name, sign-in identifiers) and <strong>support information</strong> you send when contacting us. This helps us maintain your account and respond to requests.</p>
+        <p><span class="data-badge">📌 observed usage</span> <strong>Gameplay interactions</strong> (stage progress, weapon upgrades, battle outcomes, session length, and feature taps). These help us balance difficulty, fix issues, and improve the game experience in aggregated form.</p>
+        <p><span class="data-badge">📌 derived preferences</span> With continued play, we may associate anonymized preference signals such as favored weapon loadouts, common flight patterns, or boss difficulty trends. These help us tune progression and can be reset where privacy settings are available.</p>
+
+        <!-- 2. How we use information -->
+        <h2>2. Purpose compass</h2>
+        <ul>
+            <li><strong>Run the game:</strong> We process battle progress, unlocks, leaderboard activity, and save data so core gameplay works properly.</li>
+            <li><strong>Continuity across devices:</strong> We keep your account state, progress, settings, and preferences so your play can continue when you sign in on another device.</li>
+            <li><strong>Service improvement (anonymized):</strong> Patterns like failed stages, common weapon combinations, and boss clear rates guide balance updates and content tuning — no individual player is identified.</li>
+            <li><strong>Safety & integrity:</strong> Monitoring for unusual API activity, duplicate abuse, or potential security incidents.</li>
+        </ul>
+
+        <!-- 3. Sharing boundaries -->
+        <h2>3. When information leaves our systems</h2>
+        <p><span class="data-badge">🚫 no sale</span> <strong>We do not — and will not — sell any personal data.</strong> Limited sharing happens only in these contexts:</p>
+        <ul>
+            <li><strong>Cloud & content delivery:</strong> AWS (Frankfurt) and image optimization partners process data on our behalf, under strict data processing agreements.</li>
+            <li><strong>Payment processors:</strong> For subscription transactions, your payment details go directly to Stripe or PayPal — we only receive confirmation and the last four digits.</li>
+            <li><strong>Legal obligations:</strong> If we receive a binding court order or need to prevent immediate harm (e.g., generation of illegal content), we may disclose necessary information.</li>
+        </ul>
+        <div class="callout">
+            <p style="margin: 0;"><strong>⭐ Your gameplay stays yours:</strong> Your save progress, account-linked preferences, and gameplay records are not shared with third parties for marketing. We use them only to operate, secure, and improve the game experience.</p>
+        </div>
+
+        <!-- 4. Retention & safeguards -->
+        <h2>4. How long we keep data — and how we shield it</h2>
+        <p><strong>Retention periods:</strong> Account details: kept until you delete your account (plus a 30-day backup). Gameplay progress and cloud saves: retained while your account remains active. Anonymized usage logs: up to 14 months for trend analysis and live-ops balancing.</p>
+        <p><strong>Protection measures:</strong> TLS 1.3 for all transmissions, AES-256 for stored assets. Access to production data requires temporary credentials + hardware two-factor, and every access is logged and audited.</p>
+
+        <!-- 5. Your rights -->
+        <h2>5. Your controls & rights</h2>
+        <ul>
+            <li><strong>🔍 Access your data:</strong> Visit Account → Privacy → “Request data export” to receive a machine-readable archive (JSON) of your profile and gameplay-related account data, delivered within 72h.</li>
+            <li><strong>📝 Update or correct:</strong> Player name, email, and preferences can be edited directly in settings. Where supported, you can also reset gameplay preference data tied to your account.</li>
+            <li><strong>🗑️ Erasure:</strong> Delete your account from the “Advanced” panel or contact support. Some anonymized interaction records may persist in analytics but are no longer linked to you.</li>
+            <li><strong>📧 Withdraw consent:</strong> If you previously agreed to receive marketing messages or event notices, use “unsubscribe” in any email or turn off those communications in settings.</li>
+        </ul>
+
+        <!-- 6. Local storage -->
+        <h2>6. Local storage and identifiers</h2>
+        <p>We store small pieces of data on your device or in your browser (like your session token, graphics or audio preferences, and recent login state) to make the game feel seamless. These are not used for cross-site tracking. Clearing local storage may reset some preferences but may not remove cloud saves linked to your account.</p>
+
+        <!-- 7. Children's note -->
+        <h2>7. Note about younger users</h2>
+        <p>Neon Arcade - Neon Bullet Hell is not directed to individuals under 13. If you believe a child has provided personal information without parental consent, contact us immediately — we will delete the data within one business day. Our support team is trained to handle such requests sensitively.</p>
+
+        <!-- 8. Policy updates -->
+        <h2>8. When we update this notice</h2>
+        <p>If we make significant changes (for example, introducing a new AI model that requires a different data practice), we will notify you by email at least 30 days in advance and via an in-app announcement. The “last updated” date at the top reflects the latest revision.</p>
+
+        <!-- Contact section – address updated to the specified English address -->
+        <div class="contact-panel">
+            <p style="font-weight: 500; margin-bottom: 0.75rem;">📮 Data protection contact</p>
+            <p>If you have questions, want to exercise a right, or simply need clarification:</p>
+            <div class="email-chip">📧 lumosplaygame@gmail.com</div>
+            <p style="margin-top: 0.5rem;">We aim to reply within 2 business days. For written requests (non-urgent):</p>
+            <!-- 固定英文地址：完全按照指定内容 -->
+            <div class="address-block">
+                <strong>Neon Arcade - Neon Bullet Hell Privacy Team</strong>
+                Room N176, 12th Floor, Building 8, SBI Chuangye Street, Dongxin Road, Donghu New Technology Development Zone
+            </div>
+            <p style="margin-top: 1rem; font-size: 0.95rem; color: #3a5b74;">This is our fixed business correspondence address. All privacy-related mail will be properly handled.</p>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer-row">
+            <span>© 2026 Neon Arcade - Neon Bullet Hell — your data, your terms</span>
+            <span><a href="mailto:lumosplaygame@gmail.com">lumosplaygame@gmail.com</a> · response within 48h</span>
+        </div>
+    </div>
+</body>
+</html>
+```
